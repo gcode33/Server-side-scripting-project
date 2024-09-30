@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Customer</title>
+<link rel="stylesheet" type="text/css" href="car_rental.css"></head>
+<body>
+    <form action="updatedCustomer.php" method="post">
+        <input type="hidden" name="ud_id" value="<?php echo $id; ?>">
+        First Name: <input type="text" name="ud_name" value="<?php if (isset($Forename)) echo $Forename; ?>"><br>
+        Surname: <input type="text" name="ud_surname" value="<?php if (isset($Surname)) echo $Surname; ?>"><br>
+         Email: <input type="text" name="ud_email" value="<?php if (isset($Email)) echo $Email; ?>"><br>
+          Phone Number: <input type="text" name="ud_pn" value="<?php if (isset($Phone_Num)) echo $Phone_Num; ?>"><br>
+           Licence Number: <input type="text" name="ud_LN" value="<?php if (isset($Licence_Num)) echo $Licence_Num; ?>"><br>
+
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html> 
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Make Rental</title>
+    <link rel="stylesheet" type="text/css" href="car_rental.css">
+</head>
+<body>
+    <h1>Make Rental</h1>
+    <form id="MakeRentalForm" action="MakeRental.php" method="post">
+        <input type="date" placeholder="Rental Start Date" name="RentStart">
+        <input type="date" placeholder="Return Date" name="ReturnDate">
+        <input type="time" placeholder="Rent Start Time" name="RentStartTime">
+        <input type="time" placeholder="Rent End Time" name="RentEndTime">
+        <select name="TypeCode">
+            <option value="TypeCode">Select Type Code</option>
+        </select>
+        <select name="RegNum">
+            <option value="RegNum">Select Registration Number for Car</option>
+        </select>
+        <select name="CustID">
+            <option value="CustID">Select Customer ID to Make rental for</option>
+        </select>
+        <input type="text" placeholder="Cost of rental" name="Amount" value= "<?php echo "$amount" ?>">
+        <input type="submit" name="submitdetails" value="Submit">
+    </form>
+</body>
+</html>
